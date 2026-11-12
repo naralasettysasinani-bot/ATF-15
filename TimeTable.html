@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timetable</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #000;
+        text-align: center;
+        padding: 8px;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .highlight {
+        background-color: #dff0d8;
+      }
+      .minor-honor {
+        background-color: #f2dede;
+      }
+      .counseling {
+        background-color: #fcf8e3;
+      }
+      .lab {
+        background-color: #d9edf7;
+      }
+      .break {
+        background-color: #f9f9f9;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Timetable for Year & Section: III-B.Tech & A</h2>
+    <table>
+      <tr>
+        <th>Day/Hour</th>
+        <th>8:15-9:10</th>
+        <th>9:10-10:05</th>
+        <th>10:05-10:20</th>
+        <th>10:20-11:15</th>
+        <th>11:15-12:10</th>
+        <th>12:10-01:05</th>
+        <th>01:05-02:00</th>
+        <th>02:00-02:55</th>
+        <th>02:55-03:50</th>
+      </tr>
+      <tr>
+        <td>MON</td>
+        <td>CN</td>
+        <td>FLAT</td>
+        <td class="break" rowspan="6">BREAK</td>
+        <td>IDP-1</td>
+        <td>FLAT</td>
+        <td>SE</td>
+        <td class="break" rowspan="6">LUNCH BREAK</td>
+        <td>OPEN ELECTIVES</td>
+        <td>ML</td>
+      </tr>
+      <tr>
+        <td>TUE</td>
+        <td class="minor-honor" colspan="2">Minor / Honor (AWT)</td>
+        <td>FLAT</td>
+        <td>SE</td>
+        <td class="counseling">Counseling</td>
+        <td>ML</td>
+        <td class="minor-honor">Minor / Honor (AWT)</td>
+      </tr>
+      <tr>
+        <td>WED</td>
+        <td class="minor-honor" colspan="2">Minor / Honor (AWT)</td>
+        <td>ML (DA-LAB)</td>
+        <td>FLAT (T)</td>
+        <td>SE</td>
+        <td>CN</td>
+        <td>OPEN ELECTIVES</td>
+      </tr>
+      <tr>
+        <td>THU</td>
+        <td>SE (NP-LAB)</td>
+        <td>FLAT (T)</td>
+        <td>SE</td>
+        <td>ML</td>
+        <td class="lab">Library</td>
+        <td>Minor / Honor (AWT)</td>
+      </tr>
+      <tr>
+        <td>FRI</td>
+        <td>ML</td>
+        <td>FLAT (T)</td>
+        <td>CN (DA-LAB)</td>
+        <td>ML</td>
+        <td>Minor / Honor (AWT)</td>
+        <td>SS LAB</td>
+      </tr>
+      <tr>
+        <td>SAT</td>
+        <td>CN</td>
+        <td>SE</td>
+        <td colspan="4" class="highlight">Coding Practices</td>
+      </tr>
+    </table>
+  </body>
+</html>

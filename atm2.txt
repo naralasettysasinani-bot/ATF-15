@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .balance {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="number"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Your Account</h2>
+        <div class="balance">
+            Current Balance: $1000
+        </div>
+
+        <!-- Withdraw Form -->
+        <form action="#">
+            <label for="withdraw">Withdraw Amount:</label>
+            <input type="number" id="withdraw" name="withdraw" min="1" required>
+            <input type="submit" value="Withdraw">
+        </form>
+
+        <!-- Deposit Form -->
+        <form action="#">
+            <label for="deposit">Deposit Amount:</label>
+            <input type="number" id="deposit" name="deposit" min="1" required>
+            <input type="submit" value="Deposit">
+        </form>
+
+        <!-- Logout -->
+        <form action="index.html">
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+</body>
+</html>
